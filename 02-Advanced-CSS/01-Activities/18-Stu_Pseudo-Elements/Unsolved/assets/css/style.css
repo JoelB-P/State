@@ -123,35 +123,3 @@ footer {
     text-align: center;
   }
 }
-
-span[text] {
-  position: relative;
-  text-decoration: underline;
-  color: #000;
-  cursor: grab;
-}
-
-span[text1] {
-  position: relative;
-  text-decoration: underline;
-  color: #000;
-  cursor: grab;
-}
-
-span[text]:hover::after {
-  content: attr(text);
-  position: absolute;
-  left: 0px;
-  bottom: 24px;
-  min-width: 200px;
-  border: 1px #aaaaaa solid;
-  background-color: #13293d;
-  padding: 12px;
-  color: #fff;
-  font-size: 80%;
-  z-index: 1;
-}
-
-span[text1]:hover::after {
-  content: attr(text1);
-}

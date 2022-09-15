@@ -22,5 +22,29 @@
         "tip": "test",
         "topic": "UX",
         "tip_id": "05df"
+    },
+    {
+        "username": "Sarah",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "5215"
+    },
+    {
+        "username": "Sarah",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "6523"
+    },
+    {
+        "username": "Sarah",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "1a37"
+    },
+    {
+        "username": "Sarah",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "ad80"
     }
 ]
