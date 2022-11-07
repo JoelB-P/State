@@ -1,15 +1,25 @@
-const Reader = require('./Reader');
-const LibraryCard = require('./LibraryCard');
+const Traveller = require('./Traveller');
+const Location = require('./Location');
+const Trip = require('./Trip');
 
-Reader.hasOne(LibraryCard, {
-  foreignKey: 'reader_id',
-  // When we delete a Reader, make sure to also delete the associated Library Card.
-  onDelete: 'CASCADE',
+Traveller.belongsToMany(Location, {
+  // Define the third table needed to store the foreign keys
+  through: {
+    model: Trip,
+    unique: false
+  },
+  // Define an alias for when data is retrieved
+  as: 'planned_trips'
 });
 
-LibraryCard.belongsTo(Reader, {
-  foreignKey: 'reader_id',
+Location.belongsToMany(Traveller, {
+  // Define the third table needed to store the foreign keys
+  through: {
+    model: Trip,
+    unique: false
+  },
+  // Define an alias for when data is retrieved
+  as: 'location_travellers'
 });
 
-// We package our two models and export them as an object so we can import them together and use their proper names
-module.exports = { Reader, LibraryCard };
+module.exports = { Traveller, Location, Trip };

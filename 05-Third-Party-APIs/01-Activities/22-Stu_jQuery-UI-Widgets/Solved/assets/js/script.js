@@ -32,7 +32,7 @@ formEl.on('submit', handleFormSubmit);
 
 // Autocomplete widget
 $(function () {
-  var nameInputEl = [
+  var skillNames = [
     'Bootstrap',
     'C',
     'C++',
@@ -53,7 +53,7 @@ $(function () {
     'Ruby',
   ];
   $('#skill-name').autocomplete({
-    source: nameInputEl,
+    source: skillNames,
   });
 });
 

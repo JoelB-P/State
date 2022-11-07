@@ -68,7 +68,7 @@ $(function () {
 // Sortable interaction
 $(function () {
   $('#skills-list').sortable({
-     placeholder: 'ui-state-highlight',
-   });
-   $('#skills-list').disableSelection();
+    placeholder: 'ui-state-highlight',
+  });
+  $('#skills-list').disableSelection();
 });

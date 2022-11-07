@@ -4,12 +4,12 @@ const { Schema, model } = require('mongoose');
 const courseSchema = new Schema(
   {
     courseName: {
-      type: 
-      required: 
+      type: String,
+      required: true,
     },
     inPerson: {
-      type: 
-      default: 
+      type: Boolean,
+      default: true,
     },
     startDate: {
       type: Date,
@@ -22,8 +22,8 @@ const courseSchema = new Schema(
     },
     students: [
       {
-        type: 
-        ref: 
+        type: Schema.Types.ObjectId,
+        ref: 'Student',
       },
     ],
   },
